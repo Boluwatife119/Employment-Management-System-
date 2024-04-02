@@ -1,5 +1,7 @@
 #include <iostream>
-#include <string>
+#include <string>\
+#include <cmath>
+#include <cctype>
 
 using namespace std;
 
