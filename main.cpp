@@ -137,7 +137,7 @@ void EmployeeTotalPay() {
     int employeeId = 0;
     bool foundEmployeeId = false;
 
-    cout << "Please input the employee ID in other to display his/her total payment ";
+    cout << "Please input the employee ID in other to display his/her total payment: ";
     cin >> employeeId;
 
     for(int i = 0; i < numOfEmployee; i++){
@@ -146,13 +146,17 @@ void EmployeeTotalPay() {
             cout << "\nYour total pay is: $" << employeeArray[i].salary + employeeArray[i].bonus << "\n\n\n" << endl;
             main();
         }
-        else if(!foundEmployeeId){
+    }
+
+    if(!foundEmployeeId){
             cout << "Employee with ID " << employeeId << " not found.\n";
             main();
         }
-    }
 }
 
 
 //Exit App Function
 void ExitApp(){
+    cout << "Exiting the application";
+    exit(0);
+    };
